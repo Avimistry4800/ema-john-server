@@ -67,6 +67,4 @@ app.get("/", (req, res) => {
     res.send("Hello KaKu!");
 });
 
-app.listen(port, () => {
-    console.log(`Ema-John-Server listening at http://localhost:${port}`);
-});
+app.listen(process.env.PORT || port)
